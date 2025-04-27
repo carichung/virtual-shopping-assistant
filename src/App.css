@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/*
+.App-header {
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+*/
+
+.chat-container {
+  width: 100%; /* Increased size by 20% (previously 60%) */
+  max-width: 1000px; /* Adjust for larger screens */
+  height: 300px; /* Set a fixed height so it won’t expand */
+  background-color: rgba(255, 255, 255, 0.9); /* Light transparency */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps input at the bottom */
+  overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+
+.chat-box {
+  flex-grow: 1;
+  overflow-y: auto; /* Enables scrolling inside the box */
+  padding: 10px;
+}
+
+.user-message {
+  text-align: right;
+  background-color: #d1f5d3;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.bot-message {
+  text-align: left;
+  background-color: #d0e2f7;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.chat-input input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #4ca3d3;
+}
+
+body {
+  background-image: url("./assets/makeup-background.jpg"); /* If stored in src/assets */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Customize "Virtual Shopping Assistant" title */
+.chat-title {
+  font-size: 28px; /* Adjust font size */
+  font-weight: bold;
+  font-family: 'Gaegu'; /* Example: Use a stylish font */
+  color: #ff4081; /* Soft pink color */
+  margin-bottom: 10px;
+}
+
+/* Ensure input stays at the bottom */
+.chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.auth-container {
+  text-align: center;
+  margin: 50px auto;
+  width: 300px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  background: #ff69b4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background: #d14893;
+}
